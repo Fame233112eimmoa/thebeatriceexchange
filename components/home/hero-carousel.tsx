@@ -86,7 +86,7 @@ export function HeroCarousel() {
               inert={!active}
               className={cx("col-start-1 row-start-1 transition-opacity duration-500", active ? "opacity-100" : "pointer-events-none opacity-0")}
             >
-              <div className={`${container} grid items-center gap-10 pb-16 pt-10 md:grid-cols-2 md:gap-16 md:py-16`}>
+              <div className={`${container} grid items-center gap-6 pb-16 pt-5 md:grid-cols-2 md:gap-16 md:py-16`}>
                 <div className="flex flex-col justify-center">
                   {i === 0 ? (
                     <h1 className="font-bx-serif text-[44px] font-normal leading-[1.05] text-bx-ink sm:text-6xl">{slide.title}</h1>
@@ -105,11 +105,11 @@ export function HeroCarousel() {
                     ) : null}
                   </div>
                 </div>
-                <div className="relative hidden aspect-[4/3] overflow-hidden bg-[#f4f4f3] md:block">
+                <div className="relative order-first aspect-[16/10] overflow-hidden bg-[#f4f4f3] md:order-none md:aspect-[4/3]">
                   {photo ? (
-                    <Image src={photo.src} alt={photo.alt} fill priority={i === 0} sizes="(min-width: 1280px) 600px, 50vw" className="object-cover" />
+                    <Image src={photo.src} alt={photo.alt} fill priority={i === 0} sizes="(min-width: 1280px) 600px, (min-width: 768px) 50vw, 100vw" className="object-cover" />
                   ) : product ? (
-                    <ProductArt product={product} sizes="(min-width: 1280px) 600px, 50vw" />
+                    <ProductArt product={product} sizes="(min-width: 1280px) 600px, (min-width: 768px) 50vw, 100vw" />
                   ) : null}
                 </div>
               </div>
