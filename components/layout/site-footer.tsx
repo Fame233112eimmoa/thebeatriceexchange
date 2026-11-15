@@ -44,7 +44,7 @@ export function SiteFooter() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`The Beatrice Exchange on ${label}`}
+                  aria-label={`BHS Premier Pawn and Jewelry on ${label}`}
                   className="flex h-9 w-9 items-center justify-center text-bx-ink hover:opacity-60"
                 >
                   <Icon name={icon} size={18} />
@@ -82,7 +82,7 @@ export function SiteFooter() {
               ["Returns", routes.returns],
               ["How to Pawn", routes.howToPawn],
               ["How to Sell", routes.howToSell],
-              ["Beatrice Rewards", routes.rewards],
+              ["BHS Rewards", routes.rewards],
               ["About Us", routes.about],
               ["Blog", routes.blog],
               ["Contact Us", routes.contact],
@@ -144,7 +144,7 @@ export function SiteFooter() {
           </ul>
         </div>
         <div className={`${container} flex flex-col gap-2 pb-8 text-xs text-bx-muted sm:flex-row sm:justify-between`}>
-          <p>© {new Date().getFullYear()} The Beatrice Exchange. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} BHS Premier Pawn and Jewelry. All rights reserved.</p>
           <p>
             Photography by independent photographers under open licenses.{" "}
             <Link href={routes.photoCredits} className="underline underline-offset-2 hover:text-bx-ink">

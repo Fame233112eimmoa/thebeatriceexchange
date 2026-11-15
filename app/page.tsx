@@ -20,7 +20,7 @@ import { getHotDeals, getNewArrivals, getRareFinds } from "@/lib/catalog";
 import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
-  title: { absolute: "The Beatrice Exchange | Pawn, Sell & Shop Pre-Owned Luxury" },
+  title: { absolute: "BHS Premier Pawn and Jewelry | Pawn, Sell & Shop Pre-Owned Luxury" },
 };
 
 export default function PawnshopHome() {

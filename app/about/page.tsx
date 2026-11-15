@@ -10,13 +10,13 @@ import { site } from "@/data/site";
 import { siteImage } from "@/lib/images";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "About Us", description: `Meet ${site.owner}, founder of The Beatrice Exchange, a boutique pawn and resale shop where value meets trust.` };
+export const metadata: Metadata = { title: "About Us", description: `Meet ${site.owner}, founder of BHS Premier Pawn and Jewelry, a boutique pawn and resale shop where value meets trust.` };
 
 export default function AboutPage() {
   const store = siteImage("about", "store");
   return (
     <>
-      <PageHero title="Where Value Meets Trust." crumbs={[{ label: "About" }]} description="The Beatrice Exchange was founded on a simple idea: a pawn shop can feel like a boutique, with honest prices, expert eyes and genuine hospitality." />
+      <PageHero title="Where Value Meets Trust." crumbs={[{ label: "About" }]} description="BHS Premier Pawn and Jewelry was founded on a simple idea: a pawn shop can feel like a boutique, with honest prices, expert eyes and genuine hospitality." />
 
       <section aria-labelledby="meet-beatrice" className={`${container} grid items-center gap-12 py-16 lg:grid-cols-2`}>
         <div className="relative mx-auto aspect-[4/5] w-full max-w-md">
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <p className="mt-1 text-base text-bx-muted">{site.owner}</p>
           <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-bx-charcoal">
             <p>
-              [PLACEHOLDER BIO] Beatrice opened The Beatrice Exchange to give the community a place where people are treated with respect, whether they&apos;re pawning a family ring, selling a laptop, or hunting for a vintage watch.
+              [PLACEHOLDER BIO] Beatrice opened BHS Premier Pawn and Jewelry to give the community a place where people are treated with respect, whether they&apos;re pawning a family ring, selling a laptop, or hunting for a vintage watch.
             </p>
             <p>
               With an eye for fine jewelry and a belief that every customer deserves a straight answer, Beatrice built a shop around fair appraisals, careful authentication and complete confidentiality.

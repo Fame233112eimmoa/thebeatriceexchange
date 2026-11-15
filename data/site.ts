@@ -3,12 +3,12 @@
  * before launch.
  */
 export const site = {
-  name: "The Beatrice Exchange",
-  shortName: "Beatrice Exchange",
+  name: "BHS Premier Pawn and Jewelry",
+  shortName: "BHS Premier Pawn",
   tagline: "Where Value Meets Trust.",
   owner: "Beatrice Hostetler Smith",
   description:
-    "The Beatrice Exchange is a boutique pawn and resale shop for fine jewelry, gold, designer goods and quality electronics. Shop pre-owned luxury, get a fair loan or sell your items for cash.",
+    "BHS Premier Pawn and Jewelry is a boutique pawn and resale shop for fine jewelry, gold, designer goods and quality electronics. Shop pre-owned luxury, get a fair loan or sell your items for cash.",
   url: "https://www.beatriceexchange.com", // [PLACEHOLDER DOMAIN]
   email: "hello@beatriceexchange.com", // [PLACEHOLDER EMAIL]
   phone: {

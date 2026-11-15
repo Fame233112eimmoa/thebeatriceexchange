@@ -5,12 +5,12 @@ import { Icon } from "@/components/ui/icon";
 import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 
-export const metadata: Metadata = { title: "Beatrice Rewards", description: "Earn points on purchases and loan renewals with Beatrice Rewards." };
+export const metadata: Metadata = { title: "BHS Rewards", description: "Earn points on purchases and loan renewals with BHS Rewards." };
 
 export default function RewardsPage() {
   return (
     <>
-      <PageHero title="Beatrice Rewards" crumbs={[{ label: "Rewards" }]} description="Our thank-you for coming back. Earn on every purchase and every loan renewal, and redeem for real savings." />
+      <PageHero title="BHS Rewards" crumbs={[{ label: "Rewards" }]} description="Our thank-you for coming back. Earn on every purchase and every loan renewal, and redeem for real savings." />
       <div className={`${container} grid gap-10 py-14 lg:grid-cols-[1fr_420px]`}>
         <div className="space-y-8">
           <ul className="grid gap-4 sm:grid-cols-2">
@@ -27,7 +27,7 @@ export default function RewardsPage() {
               </li>
             ))}
           </ul>
-          <p className="text-xs text-bx-muted">[PLACEHOLDER] Program terms: points have no cash value, expire after 12 months of inactivity, and may not be redeemed toward loan principal. The Beatrice Exchange may modify the program at any time.</p>
+          <p className="text-xs text-bx-muted">[PLACEHOLDER] Program terms: points have no cash value, expire after 12 months of inactivity, and may not be redeemed toward loan principal. BHS Premier Pawn and Jewelry may modify the program at any time.</p>
         </div>
         <RewardsJoinForm />
       </div>

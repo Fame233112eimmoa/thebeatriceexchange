@@ -7,7 +7,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { fullAddress, site } from "@/data/site";
 
-export const metadata: Metadata = { title: "Contact Us", description: "Call, text, email or visit The Beatrice Exchange." };
+export const metadata: Metadata = { title: "Contact Us", description: "Call, text, email or visit BHS Premier Pawn and Jewelry." };
 
 export default function ContactPage() {
   return (

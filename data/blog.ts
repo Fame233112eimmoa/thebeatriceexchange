@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "When in doubt",
         paragraphs: [
-          "Buy from a seller who stands behind authenticity. At The Beatrice Exchange, if an item we sold is ever found not to be genuine, you'll get a full refund.",
+          "Buy from a seller who stands behind authenticity. At BHS Premier Pawn and Jewelry, if an item we sold is ever found not to be genuine, you'll get a full refund.",
         ],
       },
     ],

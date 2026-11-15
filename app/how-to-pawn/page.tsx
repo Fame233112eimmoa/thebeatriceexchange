@@ -11,7 +11,7 @@ import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
   title: "How to Pawn",
-  description: "How pawn loans work at The Beatrice Exchange: what to bring, loan terms, and how to repay or extend. No credit check.",
+  description: "How pawn loans work at BHS Premier Pawn and Jewelry: what to bring, loan terms, and how to repay or extend. No credit check.",
 };
 
 export default function HowToPawnPage() {
@@ -61,7 +61,7 @@ export default function HowToPawnPage() {
           <h2 id="repay" className="font-bx-serif text-4xl font-normal text-bx-ink md:col-span-3">Repay, extend or walk away</h2>
           {[
             { icon: "cash" as const, title: "Repay & redeem", text: "Pay your loan plus the finance charge any time before the due date and take your item home." },
-            { icon: "history" as const, title: "Extend your loan", text: "Need more time? Pay just the finance charge to renew for another term, and earn Beatrice Rewards points each time." },
+            { icon: "history" as const, title: "Extend your loan", text: "Need more time? Pay just the finance charge to renew for another term, and earn BHS Rewards points each time." },
             { icon: "shield" as const, title: "No further obligation", text: "If you choose not to repay, the item is forfeited after the term and grace period. You owe nothing more, and there's no effect on your credit." },
           ].map((c) => (
             <div key={c.title} className="border border-bx-line bg-white p-7">

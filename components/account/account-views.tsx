@@ -41,11 +41,11 @@ export function AuthPanel() {
           <p className="text-sm text-bx-muted">{account.email}</p>
           {account.rewards ? (
             <p className="mt-4 inline-flex items-center gap-2 border border-bx-ink px-3 py-1 text-xs font-medium text-bx-ink">
-              <Icon name="gift" size={14} /> Beatrice Rewards member
+              <Icon name="gift" size={14} /> BHS Rewards member
             </p>
           ) : (
             <Link href={routes.rewards} className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-bx-ink underline">
-              Join Beatrice Rewards →
+              Join BHS Rewards →
             </Link>
           )}
           <button type="button" onClick={signOut} className={`${btn.outline} mt-6 !py-2`}>Sign out</button>
@@ -119,7 +119,7 @@ export function AuthPanel() {
         ) : (
           <label className="flex items-start gap-2 text-xs text-bx-muted">
             <input type="checkbox" name="rewards" className="mt-0.5 h-4 w-4 accent-[#15161b]" defaultChecked />
-            Enroll me in Beatrice Rewards (free).
+            Enroll me in BHS Rewards (free).
           </label>
         )}
         {error ? <p role="alert" className={field.error}>{error}</p> : null}

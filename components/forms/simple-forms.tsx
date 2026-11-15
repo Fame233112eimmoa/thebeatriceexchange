@@ -142,7 +142,7 @@ export function RewardsJoinForm() {
 
   if (joined || account?.rewards) {
     return (
-      <Success title="Welcome to Beatrice Rewards">
+      <Success title="Welcome to BHS Rewards">
         You&apos;re in{account ? `, ${account.name.split(" ")[0]}` : ""}! You&apos;ll earn 1 point per $1 on purchases and 25 bonus points on every loan renewal. Show your email at the counter to earn in store.
       </Success>
     );

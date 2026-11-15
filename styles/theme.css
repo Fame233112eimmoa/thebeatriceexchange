@@ -1,4 +1,4 @@
-/* The Beatrice Exchange — design tokens (namespaced "bx" so they never clash
+/* BHS Premier Pawn and Jewelry — design tokens (namespaced "bx" so they never clash
    with the Prestige Trust bank theme that shares this Tailwind build). */
 @theme inline {
   --color-bx-ink: #111111;

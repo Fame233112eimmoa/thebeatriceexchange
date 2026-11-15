@@ -107,7 +107,7 @@ export function SearchBar({ className, onNavigate }: { className?: string; onNav
     >
       <form role="search" onSubmit={submit} className="relative">
         <label htmlFor={`${listId}-input`} className="sr-only">
-          Search The Beatrice Exchange
+          Search BHS Premier Pawn and Jewelry
         </label>
         <Icon name="search" className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-bx-muted" />
         <input

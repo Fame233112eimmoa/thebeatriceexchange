@@ -1,8 +1,8 @@
-# The Beatrice Exchange: Storefront
+# BHS Premier Pawn and Jewelry: Storefront
 
 *Where Value Meets Trust.*
 
-A responsive pawnshop e-commerce front end for **The Beatrice Exchange**, built with Next.js (App Router), TypeScript and Tailwind CSS v4.
+A responsive pawnshop e-commerce front end for **BHS Premier Pawn and Jewelry**, built with Next.js (App Router), TypeScript and Tailwind CSS v4.
 
 It is a standalone Next.js project and runs at the site root.
 

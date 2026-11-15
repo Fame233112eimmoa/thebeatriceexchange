@@ -106,7 +106,7 @@ export function RewardsBanner() {
       <div className={`${container} flex flex-col gap-8 py-14 lg:flex-row lg:items-center lg:justify-between`}>
         <div className="max-w-xl">
           <h2 id="rewards-heading" className="font-bx-serif text-3xl font-normal sm:text-[40px]">
-            Beatrice Rewards
+            BHS Rewards
           </h2>
           <p className="mt-3 text-[15px] leading-relaxed text-white/70">
             Earn 1 point for every $1 you spend and 25 points every time you renew a loan. Redeem for savings, early access to new arrivals and birthday perks.
@@ -132,7 +132,7 @@ export function WhyUs() {
   return (
     <section className="border-t border-bx-line" aria-labelledby="why-us">
       <div className={`${container} py-16`}>
-        <SectionHeading id="why-us" title="Why The Beatrice Exchange" />
+        <SectionHeading id="why-us" title="Why BHS Premier Pawn and Jewelry" />
         <ul className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-5">
           {trust.map((item) => (
             <li key={item.title}>

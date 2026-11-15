@@ -6,7 +6,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { btn, container } from "@/components/ui/styles";
 import { fullAddress, site } from "@/data/site";
 
-export const metadata: Metadata = { title: "Store Locator & Hours", description: `Visit The Beatrice Exchange at ${fullAddress}. Hours, directions and contact.` };
+export const metadata: Metadata = { title: "Store Locator & Hours", description: `Visit BHS Premier Pawn and Jewelry at ${fullAddress}. Hours, directions and contact.` };
 
 export default function StoresPage() {
   const jsonLd = {

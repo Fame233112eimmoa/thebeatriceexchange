@@ -6,7 +6,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "Make a Loan Payment", description: "Pay or extend your Beatrice Exchange pawn loan online." };
+export const metadata: Metadata = { title: "Make a Loan Payment", description: "Pay or extend your BHS Premier pawn loan online." };
 
 export default function PaymentPage() {
   return (
@@ -18,7 +18,7 @@ export default function PaymentPage() {
           <h2 className="font-bx-serif text-2xl text-bx-ink">Good to know</h2>
           <p>Payments made online post to your loan within one business day.</p>
           <p>To pick up your item after paying in full, bring your pawn ticket and the photo ID used to open the loan.</p>
-          <p>Each renewal earns 25 <Link href={routes.rewards} className="font-semibold text-bx-ink underline">Beatrice Rewards</Link> points.</p>
+          <p>Each renewal earns 25 <Link href={routes.rewards} className="font-semibold text-bx-ink underline">BHS Rewards</Link> points.</p>
           <p>Loan rates and terms follow Alabama law. <Link href={routes.loanTerms} className="font-semibold text-bx-ink underline">View disclosures</Link>.</p>
         </aside>
       </div>

@@ -1,5 +1,5 @@
 /**
- * Every Beatrice Exchange URL goes through `bx()`.
+ * Every site URL goes through `bx()`.
  *
  * BASE_PATH is "" because the site runs at the domain root. To serve it under
  * a sub-path instead (e.g. "/shop"), set BASE_PATH and move the app folder.

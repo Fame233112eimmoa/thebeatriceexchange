@@ -1,5 +1,5 @@
 /**
- * Downloads openly licensed photography for The Beatrice Exchange.
+ * Downloads openly licensed photography for BHS Premier Pawn and Jewelry.
  *
  *   npm run fetch-images              download anything missing
  *   npm run fetch-images -- --plan    print every search query, no network

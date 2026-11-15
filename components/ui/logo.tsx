@@ -44,15 +44,15 @@ export function Logo({
             variant === "dark" ? "text-bx-ink" : "text-bx-ivory",
           )}
         >
-          THE BEATRICE
+          BHS PREMIER
         </span>
         <span
           className={cx(
-            "mt-1 font-bx-serif text-[10.5px] font-normal tracking-[0.62em]",
+            "mt-1 font-bx-serif text-[10.5px] font-normal tracking-[0.3em]",
             variant === "dark" ? "text-bx-ink" : "text-bx-champagne-soft",
           )}
         >
-          EXCHANGE
+          PAWN &amp; JEWELRY
         </span>
       </span>
     </span>
@@ -60,7 +60,7 @@ export function Logo({
 
   if (!href) return content;
   return (
-    <Link href={href} aria-label="The Beatrice Exchange — home" className={cx("shrink-0", className ?? "inline-flex")}>
+    <Link href={href} aria-label="BHS Premier Pawn and Jewelry — home" className={cx("shrink-0", className ?? "inline-flex")}>
       {content}
     </Link>
   );
