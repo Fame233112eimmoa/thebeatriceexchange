@@ -1,0 +1,112 @@
+import type { Category } from "../lib/types";
+
+export const categories: Category[] = [
+  {
+    slug: "jewelry-watches",
+    name: "Jewelry & Watches",
+    shortName: "Jewelry & Watches",
+    icon: "ring",
+    blurb: "Diamonds, fine gold and pre-owned luxury timepieces.",
+    subcategories: ["Rings", "Necklaces", "Bracelets", "Earrings", "Luxury Watches", "Men's Jewelry"],
+  },
+  {
+    slug: "gold-bullion",
+    name: "Gold & Bullion",
+    shortName: "Gold & Bullion",
+    icon: "bullion",
+    blurb: "Bars, rounds and investment-grade precious metals.",
+    subcategories: ["Gold Bars", "Silver Bars", "Rounds", "Scrap Gold"],
+  },
+  {
+    slug: "coins",
+    name: "Coins",
+    shortName: "Coins",
+    icon: "coin",
+    blurb: "Collectible, graded and rare U.S. and world coins.",
+    subcategories: ["U.S. Coins", "World Coins", "Graded Coins", "Proof Sets"],
+  },
+  {
+    slug: "designer-handbags",
+    name: "Designer Handbags & Accessories",
+    shortName: "Designer Bags",
+    icon: "handbag",
+    blurb: "Authenticated handbags, wallets and accessories.",
+    subcategories: ["Handbags", "Wallets", "Sunglasses", "Scarves & Belts"],
+  },
+  {
+    slug: "clothing-shoes",
+    name: "Designer Clothing & Shoes",
+    shortName: "Clothing & Shoes",
+    icon: "shirt",
+    blurb: "Authenticated outerwear, sneakers, designer shoes and vintage denim.",
+    subcategories: ["Jackets & Coats", "Sneakers", "Shoes & Boots", "Vintage"],
+  },
+  {
+    slug: "phones-tablets",
+    name: "Phones & Tablets",
+    shortName: "Phones & Tablets",
+    icon: "phone",
+    blurb: "Unlocked phones, tablets, e-readers and wearables, tested and reset.",
+    subcategories: ["Smartphones", "Tablets", "Smartwatches", "Accessories"],
+  },
+  {
+    slug: "laptops-computers",
+    name: "Laptops & Computers",
+    shortName: "Laptops",
+    icon: "laptop",
+    blurb: "Laptops, desktops and monitors for work and play.",
+    subcategories: ["Laptops", "Desktops", "Monitors", "Components"],
+  },
+  {
+    slug: "video-gaming",
+    name: "Video Gaming",
+    shortName: "Video Gaming",
+    icon: "gamepad",
+    blurb: "Consoles, handhelds, VR headsets and games.",
+    subcategories: ["Consoles", "Handhelds", "VR Headsets", "Games", "Controllers"],
+  },
+  {
+    slug: "tvs-home-audio",
+    name: "TVs & Home Audio",
+    shortName: "TVs & Audio",
+    icon: "tv",
+    blurb: "Big screens, soundbars, speakers and turntables.",
+    subcategories: ["TVs", "Soundbars", "Speakers", "Headphones", "Turntables"],
+  },
+  {
+    slug: "musical-instruments",
+    name: "Musical Instruments",
+    shortName: "Instruments",
+    icon: "guitar",
+    blurb: "Guitars, keys, amps and pro audio gear.",
+    subcategories: ["Guitars", "Amplifiers", "Keyboards", "Drums", "Pro Audio"],
+  },
+  {
+    slug: "cameras-lenses",
+    name: "Cameras & Lenses",
+    shortName: "Cameras",
+    icon: "camera",
+    blurb: "Mirrorless bodies, lenses, drones and action cams.",
+    subcategories: ["Mirrorless Cameras", "DSLRs", "Lenses", "Action Cameras", "Drones"],
+  },
+  {
+    slug: "power-tools",
+    name: "Power Tools",
+    shortName: "Power Tools",
+    icon: "drill",
+    blurb: "Cordless kits, saws and shop equipment.",
+    subcategories: ["Drills & Drivers", "Saws", "Combo Kits", "Outdoor Power"],
+  },
+  {
+    slug: "sporting-goods",
+    name: "Sporting Goods & Outdoors",
+    shortName: "Sporting Goods",
+    icon: "bike",
+    blurb: "Golf, bikes, fitness and outdoor gear.",
+    subcategories: ["Golf", "Bikes", "Fitness", "Camping & Fishing"],
+  },
+];
+
+export function getCategory(slug: string) {
+  return categories.find((category) => category.slug === slug);
+}
