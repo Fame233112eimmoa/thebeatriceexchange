@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
       {
         heading: "Repaying or extending",
         paragraphs: [
-          "Pay the loan plus the finance charge before the due date and your item is returned to you. Need more time? In most cases you can pay just the finance charge to extend. Loan rates and terms follow [STATE] law.",
+          "Pay the loan plus the finance charge before the due date and your item is returned to you. Need more time? In most cases you can pay just the finance charge to extend. Loan rates and terms follow Alabama law.",
         ],
       },
     ],

@@ -19,7 +19,7 @@ export default function PaymentPage() {
           <p>Payments made online post to your loan within one business day.</p>
           <p>To pick up your item after paying in full, bring your pawn ticket and the photo ID used to open the loan.</p>
           <p>Each renewal earns 25 <Link href={routes.rewards} className="font-semibold text-bx-ink underline">Beatrice Rewards</Link> points.</p>
-          <p>Loan rates and terms follow [STATE] law. <Link href={routes.loanTerms} className="font-semibold text-bx-ink underline">View disclosures</Link>.</p>
+          <p>Loan rates and terms follow Alabama law. <Link href={routes.loanTerms} className="font-semibold text-bx-ink underline">View disclosures</Link>.</p>
         </aside>
       </div>
     </>

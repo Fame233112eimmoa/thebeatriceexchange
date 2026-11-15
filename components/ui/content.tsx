@@ -18,7 +18,7 @@ export function LegalPage({ title, updated, children }: { title: string; updated
       <PageHero title={title} crumbs={[{ label: title }]} description={`Last updated ${updated}`} />
       <div className={`${container} py-12`}>
         <p className="mb-8 max-w-3xl border-l-2 border-bx-ink py-1 pl-4 text-sm text-bx-charcoal">
-          <strong>Placeholder text.</strong> This page is a starting template only and is not legal advice. Have it reviewed by a licensed attorney in [STATE] before publishing.
+          <strong>Placeholder text.</strong> This page is a starting template only and is not legal advice. Have it reviewed by a licensed attorney in Alabama before publishing.
         </p>
         <Prose>{children}</Prose>
       </div>

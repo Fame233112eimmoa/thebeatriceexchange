@@ -51,7 +51,7 @@ Everything in `[BRACKETS]` is a placeholder.
 | What | Where |
 | --- | --- |
 | City, state, ZIP, phone, email, hours, socials, Google reviews link | `data/site.ts` |
-| `[STATE]` in loan terms, legal pages and trust badges | `app/**`, `components/home/sections.tsx` |
+| State (Alabama) in loan terms, legal pages and trust badges | `app/**`, `components/home/sections.tsx`, `data/faq.ts`, `data/blog.ts` |
 | Beatrice's bio and portrait | `app/about/page.tsx` |
 | **Sample reviews.** Replace with genuine reviews or a Google widget, then set `reviewsAreSamples: false` | `data/reviews.ts`, `data/site.ts` |
 | Legal copy (have an attorney in your state review it) | `app/{privacy,terms,returns,pawn-loan-terms,accessibility,shipping}` |
@@ -59,7 +59,7 @@ Everything in `[BRACKETS]` is a placeholder.
 | Real product photos | add `images: ["/products/…jpg"]` to a product; these override the stock photos |
 | Estimated sales tax rate | `site.commerce.estimatedTaxRate` |
 
-The phone number `(555) 555-0142` is a reserved fictional number, so the Call and Text links work in testing. Replace it with your real line.
+The store phone number is set in `data/site.ts` (`display`, `tel`, `sms`).
 
 ## Photos
 

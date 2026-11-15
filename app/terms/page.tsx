@@ -20,9 +20,9 @@ export default function Page() {
       <h2>In-store pickup</h2>
       <p>Pickup orders are held for [3] business days. A photo ID matching the order name is required.</p>
       <h2>Pawn loans</h2>
-      <p>Pawn transactions are governed by your pawn ticket and our <Link href={routes.loanTerms}>Pawn Loan Terms &amp; Disclosures</Link>, in accordance with [STATE] law.</p>
+      <p>Pawn transactions are governed by your pawn ticket and our <Link href={routes.loanTerms}>Pawn Loan Terms &amp; Disclosures</Link>, in accordance with Alabama law.</p>
       <h2>Limitation of liability</h2>
-      <p>[PLACEHOLDER: standard limitation of liability, governing law ([STATE]) and dispute resolution language.]</p>
+      <p>[PLACEHOLDER: standard limitation of liability, governing law (Alabama) and dispute resolution language.]</p>
     </LegalPage>
   );
 }

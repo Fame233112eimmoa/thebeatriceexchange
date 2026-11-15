@@ -12,20 +12,19 @@ export const site = {
   url: "https://www.beatriceexchange.com", // [PLACEHOLDER DOMAIN]
   email: "hello@beatriceexchange.com", // [PLACEHOLDER EMAIL]
   phone: {
-    // [PLACEHOLDER] — 555-01xx numbers are reserved for fiction; replace with the real line.
-    display: "(555) 555-0142",
-    tel: "+15555550142",
-    sms: "+15555550142",
+    display: "(406) 621-0863",
+    tel: "+14066210863",
+    sms: "+14066210863",
   },
   address: {
     street: "123 Exchange Avenue",
     city: "[CITY]",
-    state: "[STATE]",
+    state: "AL",
     zip: "00000",
     country: "USA",
   },
   /** Used for the Google Maps embed + directions link. */
-  mapQuery: "123 Exchange Avenue, [CITY], [STATE]",
+  mapQuery: "123 Exchange Avenue, [CITY], AL",
   hours: [
     { days: "Monday – Friday", time: "10:00 AM – 7:00 PM" },
     { days: "Saturday", time: "10:00 AM – 6:00 PM" },

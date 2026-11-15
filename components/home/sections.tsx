@@ -125,7 +125,7 @@ const trust: Array<{ icon: IconName; title: string; text: string }> = [
   { icon: "lock", title: "Secure storage", text: "Pawned items are tagged, logged and kept in a monitored vault." },
   { icon: "bolt", title: "Fast cash", text: "Most loans and sales are completed in about 15 minutes." },
   { icon: "eyeOff", title: "Confidential service", text: "Private consultations. Your business stays your business." },
-  { icon: "shield", title: "Licensed & insured", text: "Fully licensed under [STATE] law and insured." },
+  { icon: "shield", title: "Licensed & insured", text: "Fully licensed under Alabama law and insured." },
 ];
 
 export function WhyUs() {

@@ -6,7 +6,7 @@ export const faqGroups: FaqGroup[] = [
     items: [
       {
         q: "How does a pawn loan work?",
-        a: "You bring in an item of value and a valid government-issued photo ID. We appraise it for free and offer a loan based on its value. If you accept, you leave with cash and we keep your item safe until you repay the loan plus the finance charge. Rates, fees and terms follow [STATE] law.",
+        a: "You bring in an item of value and a valid government-issued photo ID. We appraise it for free and offer a loan based on its value. If you accept, you leave with cash and we keep your item safe until you repay the loan plus the finance charge. Rates, fees and terms follow Alabama law.",
       },
       {
         q: "Does a pawn loan affect my credit?",
@@ -14,7 +14,7 @@ export const faqGroups: FaqGroup[] = [
       },
       {
         q: "What happens if I can't repay on time?",
-        a: "You can usually extend your loan by paying the finance charge due. If a loan isn't repaid or extended by the end of the term and any grace period allowed by [STATE] law, the item becomes the property of The Beatrice Exchange. You owe nothing further, and it won't affect your credit.",
+        a: "You can usually extend your loan by paying the finance charge due. If a loan isn't repaid or extended by the end of the term and any grace period allowed by Alabama law, the item becomes the property of The Beatrice Exchange. You owe nothing further, and it won't affect your credit.",
       },
       {
         q: "How do I make a payment or extend my loan?",

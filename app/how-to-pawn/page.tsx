@@ -37,11 +37,11 @@ export default function HowToPawnPage() {
               <p className="mt-4">Every loan comes with a printed pawn ticket listing the amount borrowed, the finance charge, the due date and the total needed to redeem your item. Typical terms:</p>
               <ul>
                 <li><strong>Loan amount:</strong> based on your item&apos;s resale value, condition and demand.</li>
-                <li><strong>Loan term:</strong> [XX] days, plus any grace period required by [STATE] law.</li>
-                <li><strong>Finance charges:</strong> set according to [STATE] pawn regulations and disclosed in full before you sign.</li>
+                <li><strong>Loan term:</strong> [XX] days, plus any grace period required by Alabama law.</li>
+                <li><strong>Finance charges:</strong> set according to Alabama pawn regulations and disclosed in full before you sign.</li>
                 <li><strong>No credit impact:</strong> we don&apos;t run credit checks or report to credit bureaus.</li>
               </ul>
-              <p>Loan rates and terms follow [STATE] law. See our <Link href={routes.loanTerms}>Pawn Loan Terms &amp; Disclosures</Link>.</p>
+              <p>Loan rates and terms follow Alabama law. See our <Link href={routes.loanTerms}>Pawn Loan Terms &amp; Disclosures</Link>.</p>
             </Prose>
           </section>
           <section aria-labelledby="id" className="border border-bx-line p-8 sm:p-10">
