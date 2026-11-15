@@ -5,7 +5,8 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { blogPosts } from "@/data/blog";
 
-export const metadata: Metadata = { title: "The Journal", description: "Guides to pawn loans, gold values, authentication and smart buying from BHS Premier Pawn and Jewelry." };
+export const metadata: Metadata = {
+  alternates: { canonical: "/blog" }, title: "The Journal", description: "Guides to pawn loans, gold values, authentication and smart buying from BHS Premier Pawn and Jewelry." };
 
 export default function BlogIndex() {
   return (

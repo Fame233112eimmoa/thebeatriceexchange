@@ -5,7 +5,8 @@ import { LegalPage } from "@/components/ui/content";
 import { fullAddress, site } from "@/data/site";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "Privacy Policy" };
+export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" }, title: "Privacy Policy" };
 
 export default function Page() {
   return (

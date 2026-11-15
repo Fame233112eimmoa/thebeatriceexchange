@@ -5,7 +5,8 @@ import { Icon } from "@/components/ui/icon";
 import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 
-export const metadata: Metadata = { title: "BHS Rewards", description: "Earn points on purchases and loan renewals with BHS Rewards." };
+export const metadata: Metadata = {
+  alternates: { canonical: "/rewards" }, title: "BHS Rewards", description: "Earn points on purchases and loan renewals with BHS Rewards." };
 
 export default function RewardsPage() {
   return (

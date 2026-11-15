@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/ui/content";
 import { site } from "@/data/site";
 
-export const metadata: Metadata = { title: "Pawn Loan Terms & Disclosures" };
+export const metadata: Metadata = {
+  alternates: { canonical: "/pawn-loan-terms" }, title: "Pawn Loan Terms & Disclosures" };
 
 export default function Page() {
   return (

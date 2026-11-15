@@ -5,7 +5,8 @@ import { LegalPage } from "@/components/ui/content";
 import { site } from "@/data/site";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "Terms of Service" };
+export const metadata: Metadata = {
+  alternates: { canonical: "/terms" }, title: "Terms of Service" };
 
 export default function Page() {
   return (

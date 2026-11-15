@@ -4,7 +4,8 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { imageCredits } from "@/lib/images";
 
-export const metadata: Metadata = { title: "Photo Credits", description: "Credits for the photography used on BHS Premier Pawn and Jewelry website." };
+export const metadata: Metadata = {
+  alternates: { canonical: "/photo-credits" }, title: "Photo Credits", description: "Credits for the photography used on BHS Premier Pawn and Jewelry website." };
 
 const groups = [
   ["hero", "Homepage"],

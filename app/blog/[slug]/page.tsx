@@ -18,7 +18,21 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const post = getPost((await params).slug);
-  return post ? { title: post.title, description: post.excerpt } : { title: "Article not found" };
+  if (!post) return { title: "Article not found" };
+  const photo = siteImage("blog", post.slug);
+  return {
+    title: post.title,
+    description: post.excerpt,
+    alternates: { canonical: routes.post(post.slug) },
+    openGraph: {
+      type: "article",
+      title: post.title,
+      description: post.excerpt,
+      url: routes.post(post.slug),
+      publishedTime: post.date,
+      ...(photo ? { images: [{ url: photo.src, alt: photo.alt }] } : {}),
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

@@ -5,7 +5,8 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { faqGroups } from "@/data/faq";
 
-export const metadata: Metadata = { title: "FAQ", description: "Answers about pawn loans, selling, shipping, in-store pickup, payments and returns at BHS Premier Pawn and Jewelry." };
+export const metadata: Metadata = {
+  alternates: { canonical: "/faq" }, title: "FAQ", description: "Answers about pawn loans, selling, shipping, in-store pickup, payments and returns at BHS Premier Pawn and Jewelry." };
 
 export default function FaqPage() {
   const jsonLd = {

@@ -10,7 +10,8 @@ import { site } from "@/data/site";
 import { siteImage } from "@/lib/images";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "About Us", description: `Meet ${site.owner}, founder of BHS Premier Pawn and Jewelry, a boutique pawn and resale shop where value meets trust.` };
+export const metadata: Metadata = {
+  alternates: { canonical: "/about" }, title: "About Us", description: `Meet ${site.owner}, founder of BHS Premier Pawn and Jewelry, a boutique pawn and resale shop where value meets trust.` };
 
 export default function AboutPage() {
   const store = siteImage("about", "store");

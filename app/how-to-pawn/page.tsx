@@ -10,6 +10,7 @@ import { faqGroups } from "@/data/faq";
 import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/how-to-pawn" },
   title: "How to Pawn",
   description: "How pawn loans work at BHS Premier Pawn and Jewelry: what to bring, loan terms, and how to repay or extend. No credit check.",
 };

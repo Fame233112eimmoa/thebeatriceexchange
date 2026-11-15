@@ -61,6 +61,16 @@ Everything in `[BRACKETS]` is a placeholder.
 
 The store phone number is set in `data/site.ts` (`display`, `tel`, `sms`).
 
+## Google Search Console
+
+The site already serves what Google needs: `/sitemap.xml` (every page, product and article, with product photos), `/robots.txt`, a canonical URL on every page, a share image, and structured data for the store (home and Store Locator pages) and each product. Cart, checkout and account pages are marked noindex.
+
+1. Set the real domain: `NEXT_PUBLIC_SITE_URL=https://www.yourdomain.com` in your host's environment variables, or `url` in `data/site.ts`. Every sitemap and canonical link is built from it.
+2. In Search Console add a **Domain** property and verify with the DNS TXT record (recommended), or a **URL prefix** property with the **HTML tag** method: put the code in `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` or `googleSiteVerification` in `data/site.ts`, redeploy, then click Verify.
+3. Under **Sitemaps**, submit `sitemap.xml`.
+4. Use **URL Inspection** on the home page and click **Request indexing**.
+5. Fill in the real address (city, ZIP) so the store details include it, and set up a Google Business Profile for Maps and local results. Its review link goes in `googleReviewsUrl`.
+
 ## Photos
 
 All imagery lives in `public/images/` and is listed, with photographer and license, in `data/image-credits.json`. The site reads that file to place images, and `/photo-credits` displays it (CC BY and CC BY-SA photos require that credit, so keep the page linked from the footer).

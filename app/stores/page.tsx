@@ -5,20 +5,16 @@ import { Icon } from "@/components/ui/icon";
 import { PageHero } from "@/components/ui/page-hero";
 import { btn, container } from "@/components/ui/styles";
 import { fullAddress, site } from "@/data/site";
+import { jsonLdScript, localBusinessJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = { title: "Store Locator & Hours", description: `Visit BHS Premier Pawn and Jewelry at ${fullAddress}. Hours, directions and contact.` };
+export const metadata: Metadata = {
+  alternates: { canonical: "/stores" }, title: "Store Locator & Hours", description: `Visit BHS Premier Pawn and Jewelry at ${fullAddress}. Hours, directions and contact.` };
 
 export default function StoresPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "PawnShop",
-    name: site.name,
-    telephone: site.phone.tel,
-    address: { "@type": "PostalAddress", streetAddress: site.address.street, addressLocality: site.address.city, addressRegion: site.address.state, postalCode: site.address.zip, addressCountry: "US" },
-  };
+  const jsonLd = localBusinessJsonLd();
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(jsonLd)} />
       <PageHero title="Store Locator & Hours" crumbs={[{ label: "Store Locator" }]} description="Walk-ins welcome. Free appraisals, no appointment needed." />
       <div className={`${container} grid gap-8 py-14 lg:grid-cols-[400px_1fr]`}>
         <div className="space-y-6 border border-bx-line bg-white p-8">

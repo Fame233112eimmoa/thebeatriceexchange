@@ -9,8 +9,8 @@ export const site = {
   owner: "Beatrice Hostetler Smith",
   description:
     "BHS Premier Pawn and Jewelry is a boutique pawn and resale shop for fine jewelry, gold, designer goods and quality electronics. Shop pre-owned luxury, get a fair loan or sell your items for cash.",
-  url: "https://www.beatriceexchange.com", // [PLACEHOLDER DOMAIN]
-  email: "hello@beatriceexchange.com", // [PLACEHOLDER EMAIL]
+  url: "https://www.bhspremierpawn.com",
+  email: "hello@bhspremierpawn.com", // [PLACEHOLDER EMAIL] create this mailbox or change it
   phone: {
     display: "(406) 621-0863",
     tel: "+14066210863",
@@ -36,6 +36,13 @@ export const site = {
     tiktok: "https://tiktok.com/", // [PLACEHOLDER]
   },
   googleReviewsUrl: "https://www.google.com/maps", // [PLACEHOLDER] your Google Business review link
+  /**
+   * Google Search Console "HTML tag" verification code: paste only the content
+   * value, e.g. "AbC123…" from <meta name="google-site-verification" content="AbC123…">.
+   * Not needed if you verify with a Domain property (DNS record) instead.
+   * Can also be set with the NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION env variable.
+   */
+  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? "",
   commerce: {
     freeShippingThreshold: 99,
     flatShipping: 9.95,

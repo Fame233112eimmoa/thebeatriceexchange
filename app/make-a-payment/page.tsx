@@ -6,7 +6,8 @@ import { PageHero } from "@/components/ui/page-hero";
 import { container } from "@/components/ui/styles";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "Make a Loan Payment", description: "Pay or extend your BHS Premier pawn loan online." };
+export const metadata: Metadata = {
+  alternates: { canonical: "/make-a-payment" }, title: "Make a Loan Payment", description: "Pay or extend your BHS Premier pawn loan online." };
 
 export default function PaymentPage() {
   return (

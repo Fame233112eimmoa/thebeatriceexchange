@@ -4,7 +4,8 @@ import Link from "next/link";
 import { LegalPage } from "@/components/ui/content";
 import { routes } from "@/lib/routes";
 
-export const metadata: Metadata = { title: "Returns Policy" };
+export const metadata: Metadata = {
+  alternates: { canonical: "/returns" }, title: "Returns Policy" };
 
 export default function Page() {
   return (

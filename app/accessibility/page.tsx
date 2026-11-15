@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/ui/content";
 import { fullAddress, site } from "@/data/site";
 
-export const metadata: Metadata = { title: "Accessibility Statement" };
+export const metadata: Metadata = {
+  alternates: { canonical: "/accessibility" }, title: "Accessibility Statement" };
 
 export default function Page() {
   return (

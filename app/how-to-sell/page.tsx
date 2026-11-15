@@ -9,6 +9,7 @@ import { categories } from "@/data/categories";
 import { faqGroups } from "@/data/faq";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/how-to-sell" },
   title: "How to Sell",
   description: "Sell gold, diamonds, watches, designer bags and electronics to BHS Premier Pawn and Jewelry. Get a free estimate and get paid on the spot.",
 };

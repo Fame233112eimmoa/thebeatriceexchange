@@ -18,14 +18,17 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { container } from "@/components/ui/styles";
 import { getHotDeals, getNewArrivals, getRareFinds } from "@/lib/catalog";
 import { routes } from "@/lib/routes";
+import { jsonLdScript, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: { absolute: "BHS Premier Pawn and Jewelry | Pawn, Sell & Shop Pre-Owned Luxury" },
 };
 
 export default function PawnshopHome() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript([websiteJsonLd(), localBusinessJsonLd()])} />
       <HeroCarousel />
       <CtaCards />
       <FeaturedCategories />

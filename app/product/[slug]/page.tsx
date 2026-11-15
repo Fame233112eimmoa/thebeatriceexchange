@@ -11,6 +11,7 @@ import { site } from "@/data/site";
 import { getAllProducts, getProductBySlug, getRelatedProducts } from "@/lib/catalog";
 import { formatMoney } from "@/lib/format";
 import { routes } from "@/lib/routes";
+import { absoluteUrl, jsonLdScript, productImageUrls } from "@/lib/seo";
 
 export function generateStaticParams() {
   return getAllProducts().map((product) => ({ slug: product.slug }));
@@ -20,9 +21,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return { title: "Item not found" };
+  const description = `${product.condition} ${product.name}, ${formatMoney(product.price)}. ${product.description}`.slice(0, 160);
+  const [image] = productImageUrls(product);
   return {
     title: product.name,
-    description: `${product.condition} ${product.name}, ${formatMoney(product.price)}. ${product.description}`.slice(0, 160),
+    description,
+    alternates: { canonical: routes.product(product.slug) },
+    openGraph: { title: product.name, description, url: routes.product(product.slug), ...(image ? { images: [{ url: image, alt: product.name }] } : {}) },
   };
 }
 
@@ -37,6 +42,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
+    url: absoluteUrl(routes.product(product.slug)),
+    image: productImageUrls(product),
     sku: product.sku,
     brand: { "@type": "Brand", name: product.brand },
     description: product.description,
@@ -45,6 +52,8 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       "@type": "Offer",
       priceCurrency: "USD",
       price: product.price,
+      url: absoluteUrl(routes.product(product.slug)),
+      itemCondition: "https://schema.org/UsedCondition",
       availability: "https://schema.org/InStock",
       seller: { "@type": "Organization", name: site.name },
     },
@@ -52,7 +61,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdScript(jsonLd)} />
       <div className={`${container} py-8`}>
         <nav aria-label="Breadcrumb" className="mb-6 text-xs text-bx-muted">
           <ol className="flex flex-wrap gap-1.5">

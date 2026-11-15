@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { ShopBrowser } from "@/components/shop/shop-browser";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/shop" },
   title: "Shop Pre-Owned Jewelry, Watches & Electronics",
   description: "Browse authenticated pre-owned jewelry, gold, coins, designer handbags, electronics and more. Free shipping over $99 or pick up in store.",
 };
