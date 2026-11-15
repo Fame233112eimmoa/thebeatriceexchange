@@ -89,6 +89,14 @@ const PRODUCT_QUERIES: Record<string, string[]> = {
   "cuban-link-chain-10k-yellow-gold-22-in": ["Cuban link chain", "gold chain necklace", "gold chain necklace"],
   "omega-seamaster-diver-300m": ["Omega Seamaster Diver 300M", "Omega Seamaster", "diver watch blue dial"],
   "tennis-bracelet-4-00-ctw-14k-white-gold": ["diamond tennis bracelet", "diamond bracelet", "diamond bracelet jewelry"],
+  "diamond-stud-earrings-1-00-ctw-14k-white-gold": ["diamond stud earrings", "stud earrings", "solitaire earrings", "diamond earrings"],
+  "gold-hoop-earrings-14k-yellow-gold-30mm": ["gold hoop earrings", "hoop earrings", "gold earrings", "gold hoop earrings"],
+  "men-s-ribbed-wedding-band-14k-yellow-gold": ["gold wedding band", "gold ring"],
+  "men-s-franco-chain-sterling-silver-24-in": ["sterling silver chain", "silver chain necklace", "silver chain necklace"],
+  "vintage-style-diamond-bridal-set-14k-white-gold": ["diamond bridal set", "diamond engagement ring"],
+  "sapphire-and-diamond-halo-ring-14k-white-gold": ["sapphire halo ring", "sapphire diamond ring", "sapphire engagement ring", "sapphire ring"],
+  "cross-pendant-necklace-10k-yellow-gold-20-in": ["gold cross pendant", "cross pendant", "gold cross necklace", "cross necklace"],
+  "bangle-bracelet-18k-yellow-gold": ["gold bangle", "gold bangles", "gold bracelet", "gold bangle bracelet"],
   "1-oz-gold-bar-pamp-suisse-fortuna": ["PAMP Suisse gold bar", "gold bar 1 oz", "gold bar bullion"],
   "10-oz-silver-bar-engelhard": ["Engelhard silver bar", "silver bullion bar", "silver bullion bar"],
   "1-10-oz-american-gold-eagle-random-year": ["American Gold Eagle coin", "American Gold Eagle", "gold coin close up"],
@@ -244,7 +252,31 @@ const JUNK = /\b(logo|diagram|terminology|map|chart|screenshot|drawing|illustrat
  * Photos ruled out after looking at them (wrong item, people, watermark, poor
  * quality). Format: "<provider>-<sourceId>" — e.g. "commons-Rolex_Datejust_1603.jpg".
  */
-const REJECTED = new Set<string>([]);
+const REJECTED = new Set<string>([
+  // New jewelry listings (Nov 2026): wrong item, people, or museum artifacts.
+  "commons-American_-_Bangle_Bracelet_-_Walters_572142.jpg",
+  "commons-European_-_Bangle_Bracelet_-_Walters_572143.jpg",
+  "commons-Inlaid_bangle_bracelet_Bracelet,_18th–19th_century_(CH_18647655).jpg",
+  "commons-Spiral_bracelet_MNMA_Cl9245.jpg",
+  "commons-Gold_Necklace_with_Pendant_Cross_MET_sf17-190-1659s1.jpg",
+  "commons-Gold_Necklace_with_Pendant_Cross_MET_sf17-190-1659d3.jpg",
+  "commons-Girli_X_Paper_Magazine_X_Justin_Atkins.jpg",
+  "commons-Vertu_luxury_mobile_phones_in_store_window.jpg",
+  "commons-Vertu_luxury_mobile_phones_behind_glass.jpg",
+  "commons-Johann_Moritz_Rugendas_(1802-1858)_._Litografia_aquarelada_1835.jpg",
+  "commons-Gold_hoop_earrings_with_candy_rolls_by_ASQ.jpg",
+  "commons-02024_0697_8_mm_diameter_gold_hoop_earring.jpg",
+  "commons-Black_Opal_Ring_with_Diamond.jpg",
+  "commons-Black_Opal_Ring.JPG",
+  "commons-Gold_chain_with_gemstones_and_enamel,_late_16th_century,_The_Royal_Armoury,_Sweden.jpg",
+  "commons-Opal_Ring_03.JPG",
+  "commons-Engagement_ring_18K_yellow_gold_with_yellow_sapphire_and_diamonds.jpg",
+  "commons-Dark_Sapphire_and_diamond_ring.jpg",
+  "commons-French_-_Ring_with_Cluster_of_Stones_-_Walters_571757_-_Three_Quarter.jpg",
+  "commons-French_-_Ring_Watch_-_Walters_5850_-_Three_Quarter.jpg",
+  "commons-Medieval_finger_ring_(FindID_582905).jpg",
+  "commons-Post-medieval_finger_ring._(FindID_478511).jpg",
+]);
 
 /**
  * Hand-picked photos, in display order, chosen by reviewing contact sheets.
@@ -253,6 +285,39 @@ const REJECTED = new Set<string>([]);
  * for that item again. Items not listed here (e.g. new products) are searched.
  */
 const PINNED: Record<string, string[]> = {
+  // New jewelry listings (Nov 2026), hand-picked from contact sheets.
+  "products/diamond-stud-earrings-1-00-ctw-14k-white-gold": [
+    "openverse-6d0dff53-8ae8-4421-9f2c-7795615df913",
+  ],
+  "products/gold-hoop-earrings-14k-yellow-gold-30mm": [
+    "commons-Hoop_Earring_MET_68.136.12_EGDP019539.jpg",
+    "commons-Hoop_Earring_MET_68.136.15_EGDP019545.jpg",
+  ],
+  "products/men-s-ribbed-wedding-band-14k-yellow-gold": [
+    "openverse-adc5e10f-9453-49db-811c-dd2557890568",
+  ],
+  "products/men-s-franco-chain-sterling-silver-24-in": [
+    "commons-Figaro_chain_in_sterling_silver_1.jpg",
+    "commons-Round_sterling_silver_chain_1.jpg",
+    "commons-Figaro_chain_in_sterling_silver_2.jpg",
+    "commons-Venetian_chain_in_sterling_silver_1.jpg",
+  ],
+  "products/vintage-style-diamond-bridal-set-14k-white-gold": [
+    "openverse-32824d12-a298-4956-a388-07cd95877bf5",
+  ],
+  "products/sapphire-and-diamond-halo-ring-14k-white-gold": [
+    "commons-Grace-teal-sapphire-diamond-engagement-ring-Milla-diamond-wedding-ring-stack-Sydney-jeweller-Lizunova-Fine-Jewels-NSW-Australia.jpg",
+    "commons-Sapphire_diamond_ring.jpg",
+    "commons-Bespoke-custom-made-cushion-sapphire-diamond-engagement-ring-platinum-Sydney-jeweller-Lizunova-Fine-Jewels-NSW-Australia.jpg",
+  ],
+  "products/cross-pendant-necklace-10k-yellow-gold-20-in": [
+    "openverse-ac842c1d-ec8e-4758-bee6-d4c3cc4f75fa",
+    "openverse-7878049e-d195-4094-81f0-05de0c12e822",
+  ],
+  "products/bangle-bracelet-18k-yellow-gold": [
+    "openverse-00c23050-f2ff-471f-9a71-4bbe60967038",
+    "openverse-2b409b03-b6e7-4e2c-bb76-3026b3e08062",
+  ],
   "hero/luxury": [
     "openverse-dd2ba7ca-830d-42b8-a785-6e973163dd6b",
   ],
