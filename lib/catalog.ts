@@ -120,7 +120,11 @@ export function filterProducts(filters: ShopFilters) {
       list.sort((a, b) => savingsRatio(b) - savingsRatio(a));
       break;
     default:
-      list.sort((a, b) => Number(Boolean(b.hotDeal)) - Number(Boolean(a.hotDeal)));
+      list.sort(
+        (a, b) =>
+          Number(Boolean(b.pinned)) - Number(Boolean(a.pinned)) ||
+          Number(Boolean(b.hotDeal)) - Number(Boolean(a.hotDeal)),
+      );
   }
   return list;
 }

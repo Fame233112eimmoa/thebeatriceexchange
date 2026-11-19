@@ -40,6 +40,8 @@ export type Product = {
   /** Merchandising flags used by the homepage sliders. */
   hotDeal?: boolean;
   rareFind?: boolean;
+  /** Pinned to the top of the default "Featured" sort. */
+  pinned?: boolean;
   /** ISO date the item hit the floor — drives "New Arrivals" + "Newest" sort. */
   addedAt: string;
   pickupAvailable: boolean;

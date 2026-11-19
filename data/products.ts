@@ -20,6 +20,7 @@ type Seed = {
   addedAt: string;
   hotDeal?: boolean;
   rareFind?: boolean;
+  pinned?: boolean;
   pickupOnly?: boolean;
 };
 
@@ -46,6 +47,7 @@ const seeds: Seed[] = [
     hue: 42,
     addedAt: "2026-11-10",
     rareFind: true,
+    pinned: true,
   },
   {
     name: "1.52 ct Round Diamond Solitaire, 14K White Gold",
@@ -1314,6 +1316,7 @@ export const products: Product[] = seeds.map((seed, index) => {
     specs: seed.specs,
     hotDeal: seed.hotDeal,
     rareFind: seed.rareFind,
+    pinned: seed.pinned,
     addedAt: seed.addedAt,
     pickupAvailable: true,
     shippable: !seed.pickupOnly,
