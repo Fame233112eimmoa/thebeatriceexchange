@@ -38,15 +38,13 @@ const seeds: Seed[] = [
     brand: "Rolex",
     category: "jewelry-watches",
     subcategory: "Luxury Watches",
-    price: 7450,
-    originalPrice: 8995,
+    price: 55000,
     condition: "Excellent",
     description:
       "A timeless 36mm Datejust with fluted white gold bezel and silver dial on a Jubilee bracelet. Serviced, pressure tested and authenticated in-house.",
     specs: { "Case Size": "36mm", Movement: "Automatic", Bracelet: "Jubilee", "Box & Papers": "Box only", Reference: "16234" },
     hue: 42,
     addedAt: "2026-11-10",
-    hotDeal: true,
     rareFind: true,
   },
   {
