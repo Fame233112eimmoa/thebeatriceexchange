@@ -1283,6 +1283,20 @@ const seeds: Seed[] = [
     addedAt: "2026-11-14",
     rareFind: true,
   },
+  {
+    name: "Rolex Day-Date 40 President",
+    brand: "Rolex",
+    category: "jewelry-watches",
+    subcategory: "Luxury Watches",
+    price: 55000,
+    condition: "Excellent",
+    description:
+      "The iconic 40mm Day-Date in solid 18K gold on the signature President bracelet, with day and date displayed at a glance. Authenticated, pressure tested and serviced in-house.",
+    specs: { "Case Size": "40mm", Movement: "Automatic", Bracelet: "President", Metal: "18K Gold" },
+    hue: 45,
+    addedAt: "2026-11-19",
+    rareFind: true,
+  },
 ];
 
 export const products: Product[] = seeds.map((seed, index) => {

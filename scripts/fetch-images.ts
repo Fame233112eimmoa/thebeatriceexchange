@@ -85,6 +85,7 @@ type Candidate = {
  */
 const PRODUCT_QUERIES: Record<string, string[]> = {
   "rolex-datejust-36-steel-and-white-gold": ["Rolex Datejust", "luxury steel wristwatch"],
+  "rolex-day-date-40-president": ["Rolex Day-Date", "Rolex Day-Date President", "gold luxury wristwatch"],
   "1-52-ct-round-diamond-solitaire-14k-white-gold": ["diamond solitaire ring", "diamond engagement ring", "diamond solitaire engagement ring"],
   "cuban-link-chain-10k-yellow-gold-22-in": ["Cuban link chain", "gold chain necklace", "gold chain necklace"],
   "omega-seamaster-diver-300m": ["Omega Seamaster Diver 300M", "Omega Seamaster", "diver watch blue dial"],

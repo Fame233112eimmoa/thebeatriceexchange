@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T19:30:16.061Z",
+  "generatedAt": "2026-11-19T21:21:56.682Z",
   "images": [
     {
       "key": "hero/luxury",
@@ -3840,6 +3840,38 @@
       "creatorUrl": null,
       "license": "Public domain",
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "key": "products/rolex-day-date-40-president-1",
+      "group": "products",
+      "subject": "rolex-day-date-40-president",
+      "index": 1,
+      "file": "/images/products/rolex-day-date-40-president-1.jpg",
+      "alt": "Rolex Day-Date 40 President",
+      "query": "Rolex Day-Date",
+      "source": "wikimedia",
+      "sourceId": "Rolex_Day-Date_Lacquered_Stella_Dial.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolex_Day-Date_Lacquered_Stella_Dial.jpg",
+      "creator": "Kevin Sweeney",
+      "creatorUrl": null,
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "key": "products/rolex-day-date-40-president-2",
+      "group": "products",
+      "subject": "rolex-day-date-40-president",
+      "index": 2,
+      "file": "/images/products/rolex-day-date-40-president-2.jpg",
+      "alt": "Rolex Day-Date 40 President, photo 2",
+      "query": "Rolex Day-Date",
+      "source": "wikimedia",
+      "sourceId": "Rolex_Oysterquartz_Day-Date_in_oro.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolex_Oysterquartz_Day-Date_in_oro.jpg",
+      "creator": "Clyde94",
+      "creatorUrl": null,
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     {
       "key": "products/samsung-65-qled-4k-smart-tv-1",
